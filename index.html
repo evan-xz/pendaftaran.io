@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Peserta Didik Taekwondo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pendaftaran Peserta Didik Taekwondo</h1>
+            <p>Daftar untuk menjadi bagian dari tim Taekwondo kami!</p>
+        </header>
+        
+        <div class="form-container">
+            <form id="taekwondoForm">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="age">Umur:</label>
+                <input type="number" id="age" name="age" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Nomor Telepon:</label>
+                <input type="text" id="phone" name="phone" required>
+                
+                <label for="belt">Gelar Sabuk:</label>
+                <select id="belt" name="belt" required>
+                    <option value="white">Putih</option>
+                    <option value="yellow">Kuning</option>
+                    <option value="green">Hijau</option>
+                    <option value="blue">Biru</option>
+                    <option value="red">Merah</option>
+                </select>
+
+                <button type="submit" id="submitBtn" class="submit-btn">Daftar</button>
+            </form>
+        </div>
+        
+        <footer>
+            <img src="taekwondo-image.jpg" alt="Taekwondo" class="taekwondo-image">
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
